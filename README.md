@@ -1,9 +1,9 @@
-# The article enricher service
+# The Article Storage Microservice
 
 ### The task
-You are implementing an Article Repository micro service responsible for persisting, finding and deleting articles from the repository. Clients will communicate with your micro service via http REST interface.
+You are implementing an Article Storage micro service responsible for persisting, finding and deleting articles. Clients will communicate with your micro service via http REST interface.
    
-1. Implement Repository interface. In-memory articles storage would be sufficient.
+1. Implement Repository interface to create Article Store. In-memory articles storage would be sufficient.
 
 2. Create an http endpoints to facilitate persist, find and delete repository operations. You are free to use any rest library you prefer for this purpose. 
    
