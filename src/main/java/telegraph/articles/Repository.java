@@ -1,5 +1,6 @@
 package telegraph.articles;
 
+import java.util.Collection;
 import java.util.Optional;
 
 public interface Repository<T> {
@@ -13,11 +14,19 @@ public interface Repository<T> {
     Optional<T> findById(String id);
 
     /**
+     * Find contents written by specific author
+     *
+     * @param author
+     * @return
+     */
+    Collection<T> findByAuthor(String author);
+
+    /**
      * Create or update existing content
      *
      * @param
      */
-    void persist(T article);
+    void persist(T content);
 
     /**
      * Deletes content by id
