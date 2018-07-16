@@ -3,7 +3,7 @@ package telegraph.articles;
 import java.util.Collection;
 import java.util.Optional;
 
-public interface Repository<T> {
+public interface Repository<K, T> {
 
     /**
      * Find content by id
@@ -11,7 +11,7 @@ public interface Repository<T> {
      * @param id
      * @return
      */
-    Optional<T> findById(String id);
+    Optional<T> findById(K id);
 
     /**
      * Find contents written by specific author
@@ -33,6 +33,6 @@ public interface Repository<T> {
      *
      * @param id
      */
-    void delete(String id);
+    void delete(K id);
 
 }
