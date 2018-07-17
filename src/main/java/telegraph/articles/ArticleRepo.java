@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Optional;
 
-/**
- * Created by athermughal on 17/07/2018.
- */
 public class ArticleRepo implements Repository<String, Article>{
 
     private Collection<Article> articles = new ArrayList<>();
