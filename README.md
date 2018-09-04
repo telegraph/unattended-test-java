@@ -1,9 +1,13 @@
-# The article enricher service
+# The Article Storage Microservice
 
 ### The task
-Our service has been asked to create a new Article Enricher service that produces an article definition containing an article name,  its hero image, and all videos associated with a given article id.
+You are implementing an Article Storage micro service responsible for persisting, finding and deleting articles. Clients will communicate with your micro service via http REST interface.
+   
+1. Implement Repository interface to create Article Store. In-memory articles storage would be sufficient.
 
-This service will leverage existing APIs to collect this information and return it to the requester.
+2. Create an http endpoints to facilitate persist, find and delete repository operations. You are free to use REST library of your choice. 
+   
+3. Create a docker image of your micro service ready to be deployed in production environment!    
 
-We're lucky enough to have been given clients for our Article reference and Assets services, so we're not going to need you to implement that.
-All we need you to do is to implement the logic of the ArticleEnricher. Please create an implementation for this class that gets all information needed provided the references.
+You can make assumptions deemed necessary to complete your task. Create an assumptions.txt file and supply all such assumptions, as bullet points, along with the task submission.
+  
