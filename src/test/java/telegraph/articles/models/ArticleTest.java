@@ -9,6 +9,7 @@ public class ArticleTest {
     @Test
     public void shouldBeTrue() {
         assertTrue(true);
+        assertFalse(false);
     }
 
 }
